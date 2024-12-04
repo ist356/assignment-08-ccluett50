@@ -50,5 +50,7 @@ if __name__ == '__main__':
     top = top_locations(df)
     top_map = top_locations_mappable(df)
     top2 = tickets_in_top_locations(df)
+    #write to csv and cache
+    top_map.to_csv('./cache/top_locations_mappable.csv')
     st.write(top2)
     
