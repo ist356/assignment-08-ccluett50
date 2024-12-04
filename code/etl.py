@@ -35,8 +35,10 @@ def tickets_in_top_locations(violations_df : pd.DataFrame, threshold=1000) -> pd
     It should just be a subset of the original dataframe where the location one of the top locations.  
     There should be 8,109 rows in this dataframe.
     '''
-
-    return 
+    top_df = top_locations(violations_df, threshold)
+    top2 = top_df['location']
+    combined = pd.merge(top2, violations_df, left_on='location', right_on='location')
+    return combined
 
 if __name__ == '__main__':
     '''
@@ -47,5 +49,6 @@ if __name__ == '__main__':
     df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
     top = top_locations(df)
     top_map = top_locations_mappable(df)
-    st.write(top_map)
+    top2 = tickets_in_top_locations(df)
+    st.write(top2)
     
