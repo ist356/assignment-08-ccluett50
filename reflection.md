@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Connor Cluett
+Sudent Email:  cpcluett@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+This assignment helped me understand the process of building maps and plotting points on maps. This assignment was a fairly simple ETL, that had parking ticket data so this was pretty easy. I also found it helpful how we created the dashboard, used streamlit col, and used metrics to show different stats. This assignment was a lot of data preprocessing to them build an interactive dashboard, which is helpful and I might use the same principle for my project.
